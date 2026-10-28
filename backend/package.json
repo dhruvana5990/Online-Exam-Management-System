@@ -1,0 +1,21 @@
+{
+  "name": "online-examination-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Online Examination System college project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check routes/auth.js && node --check routes/exams.js && node --check routes/attempts.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
